@@ -24,7 +24,7 @@ export function Hero () {
                             loop: true,
                         }}
                     /></h1>
-                    <p className="mt-5 ml-2 text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptuous.</p>
+                    <p className="mt-5 ml-2 text-base lg:text-lg">I am a frontend web developer with a passion for creating interactive and responsive web applications.</p>
                 </div>
                 <div className="hidden lg:block lg:w-1/3">
                     <Button value={"Download CV"} />
