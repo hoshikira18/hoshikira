@@ -16,7 +16,12 @@ export function Hero () {
                                 .pauseFor(1500)
                                 .deleteAll()
                             typewriter.typeString('Hoshikira')
+                                .pauseFor(1500)
+                                .deleteAll()
                                 .start();
+                        }}
+                        options={{
+                            loop: true,
                         }}
                     /></h1>
                     <p className="mt-5 ml-2 text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptuous.</p>
