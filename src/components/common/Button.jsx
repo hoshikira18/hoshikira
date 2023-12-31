@@ -24,7 +24,7 @@ export function Button ({ value, href, onClick, size }) {
     }
 
     return (
-        <Component {...props} className={`${sizeClass} font-quicksand font-bold bg-[#121212] hover:bg-blue-500 hover:text-black border-[4px] border-blue-500 text-blue-500 transition-all`}>
+        <Component {...props} className={`${sizeClass} w-full text-center font-quicksand font-bold bg-[#121212] hover:bg-primary hover:text-black border-[4px] border-primary text-primary transition-all`}>
             {value}
         </Component>
     )
