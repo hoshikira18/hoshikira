@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 export function Hero () {
 
     return (
-        <section className="lg:px-48 h-screen px-5 bg-[#121212] flex flex-col lg:flex-row items-center justify-center space-y-10">
+        <section className="mt-10 lg:px-48 h-screen px-5 bg-[#121212] flex flex-col lg:flex-row items-center justify-center space-y-10">
             <div className="w-full lg:w-4/5 lg:pl-5 text-center lg:text-start text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-primary font-bold space-y-10">
                 <div>
                     <h1 className="text-4xl lg:text-7xl">Hello, I'm</h1>
