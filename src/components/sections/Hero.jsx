@@ -33,7 +33,7 @@ export function Hero () {
 
 
             <div className="lg:w-2/5 flex justify-end">
-                <div className="border-4 bg-transparent bg-gradient-to-r from-blue-100 to-blue-800 w-80 lg:w-96 h-80 lg:h-96 bg-[#181818] rounded-full flex items-end justify-center overflow-hidden">
+                <div className="border-4 border-blue-300 bg-transparent bg-gradient-to-r from-blue-100 to-blue-800 w-80 lg:w-96 h-80 lg:h-96 bg-[#181818] rounded-full flex items-end justify-center overflow-hidden">
                     <img src={HeroImage} alt="hero-image" className="h-[90%]" />
                 </div>
             </div>
