@@ -24,7 +24,7 @@ export function Header () {
                 <a href="#">About</a>
                 <a href="#">Contact</a>
                 <a href="#">Home</a>
-                <Button value={"Github"} href={"https://github.com/hoshikira18"} size={"large"} />
+                <Button value={"Github"} href={"https://github.com/hoshikira18"} />
             </div>
         </div>
     )
