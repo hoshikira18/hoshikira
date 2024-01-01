@@ -1,13 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LuMenu } from "react-icons/lu";
 import { Button } from "../common/Button";
 
 export function Header () {
 
+    const [Y, setY] = useState(0);
+
+    function handleScroll() {
+        setY(window.scrollY);
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const bgClass = Y > 20 ? 'bg-[#121212]' : 'bg-transparent';
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="z-10 fixed top-0 text-lg w-full text-primary lg:px-40 py-3 border-b border-gray-500 flex flex-col lg:flex-row lg:justify-between">
+        <div className={`${bgClass} z-10 fixed top-0 text-lg w-full text-primary lg:px-40 py-3 border-b border-gray-500 flex flex-col lg:flex-row lg:justify-between`}>
             <div className="text-xl lg:text-4xl font-bold px-5 flex justify-between items-center uppercase font-rubik">
                 <a href={"#"}>
                     Hoshikira<span className="text-sm lg:text-base text-yellow-700">.18</span>
