@@ -65,7 +65,7 @@ export function Hero () {
   }, []);
 
     return (
-        <section className="relative lg:my-0 my-10 lg:px-48 min-h-screen px-5 flex flex-col lg:flex-row items-center justify-center space-y-10">
+        <section className="z-7 relative lg:my-0 my-10 lg:px-48 min-h-screen px-5 flex flex-col lg:flex-row items-center justify-center space-y-10">
             <div className="w-full lg:w-4/5 lg:pl-5 text-center lg:text-start text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-primary font-bold font-rubik space-y-10">
                 <div>
                     <h1 className="text-4xl lg:text-7xl">Hello, I'm</h1>
@@ -100,9 +100,7 @@ export function Hero () {
             <div className="w-full lg:hidden">
                 <Button value={"Download CV"} />
             </div>
-            <div className="absolute z-5 top-0 right-0 bottom-0 left-0">
                 <Particles id={"tsparticles"} init={particlesInit} options={options} />
-            </div>
         </section>
     )
 }
