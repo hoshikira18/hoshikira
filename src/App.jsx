@@ -3,7 +3,7 @@ import { Hero } from "./components/sections/Hero"
 function App() {
 
   return (
-    <div className="bg-[#121212]">
+    <div className="">
       <Header />
       <Hero />
     </div>
