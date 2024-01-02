@@ -32,7 +32,7 @@ export function Header () {
            
             <div className={`${
                 menuOpen ? 'flex' : 'hidden'
-            } lg:flex flex-col px-5 lg:flex-row lg:items-center text-lg lg:text-xl lg:px-5 text-blue-300 items-center lg:space-x-5 space-y-2 lg:space-y-0 pt-2 lg:pt-0 font-rubik`}>
+            } lg:flex flex-col px-5 lg:flex-row lg:items-center text-lg lg:text-xl lg:px-5 text-primary items-center lg:space-x-5 space-y-2 lg:space-y-0 pt-2 lg:pt-0 font-rubik`}>
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
