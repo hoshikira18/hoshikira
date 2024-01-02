@@ -1,5 +1,5 @@
 import { Button } from "../common/Button"
-import HeroImage from "/hero-image.png"
+import HeroImage from "/hero-image.webp"
 import Typewriter from 'typewriter-effect';
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim"; // loads tsparticles-slim
