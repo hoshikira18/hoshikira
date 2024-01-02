@@ -92,7 +92,8 @@ export function Hero () {
                         }}
                         options={{
                             loop: true,
-                            cursor: "_"
+                            cursor: "_",
+                            cursorClassName: ""
                         }}
                     /></h1>
                     <p className="mt-5 ml-2 text-base lg:text-xl lg:pr-20">I am a frontend web developer with a passion for creating interactive and responsive web applications.</p>
