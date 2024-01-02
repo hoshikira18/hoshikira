@@ -95,7 +95,7 @@ export function Hero () {
                             cursor: "_"
                         }}
                     /></h1>
-                    <p className="mt-5 ml-2 text-base lg:text-xl">I am a frontend web developer with a passion for creating interactive and responsive web applications.</p>
+                    <p className="mt-5 ml-2 text-base lg:text-xl lg:pr-20">I am a frontend web developer with a passion for creating interactive and responsive web applications.</p>
                 </div>
                 <div className="hidden lg:block lg:w-1/3">
                     <Button value={"Download resume"} />
