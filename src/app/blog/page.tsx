@@ -11,9 +11,10 @@ const query = gql`
       coverImage {
         url
       }
+      excerpt
       slug
       title
-      updatedAt
+      date
     }
   }
 `
@@ -26,7 +27,8 @@ interface postsProps {
   slug?: string
   coverImage: image
   title?: string
-  updateAt?: string
+  excerpt?: string
+  date?: string
 }
 
 interface dataProps {
@@ -35,13 +37,12 @@ interface dataProps {
 
 const Blog = async () => {
   const data: dataProps = await graphConnect.request(query)
-
   return (
     <Layout>
-      <div className="">
-        <h1 className="text-center text-xl font-bold">Hoshikira</h1>
+      <div className="pb-24">
+        <h1 className="text-center text-textColor py-3 text-xl font-bold">Hoshikira | Blog</h1>
 
-        <div>
+        <div className='space-y-10'>
           {data.posts.map((post, index) => {
             return (
               <div key={index} className="px-3">
@@ -49,6 +50,8 @@ const Blog = async () => {
                   image={post.coverImage.url}
                   title={post.title}
                   slug={post.slug}
+                  excerpt={post.excerpt}
+                  createdAt={post.date}
                 />
               </div>
             )

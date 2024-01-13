@@ -2,5 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+#content, 
+#content code, 
+#content a, 
+#content h1, 
+#content h2, 
+#content h3, 
+#content h4, 
+#content h5 {
+    color: white;
+}
 
 
+html {
+    scroll-behavior: smooth;
+}

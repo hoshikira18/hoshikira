@@ -61,10 +61,11 @@ const Blog = async ({ params }: paramProps) => {
 
   return (
     <Layout>
-      <article className="px-3 text-background">
+      <article className="px-3 text-white">
         <h1 className="text-2xl font-bold">{data.post.title}</h1>
         <div
-          className="prose"
+          id='content'
+          className="prose "
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
       </article>
